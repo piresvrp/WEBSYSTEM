@@ -1,0 +1,189 @@
+body {
+    background-color: #ffffff;
+    font-size: 12px;
+    font-family: Verdana, "Verdana CE",  Arial, "Arial CE", "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
+    color: #000000;  
+    margin: 0px;
+}
+
+h1 {
+    font-family: Arial, "Arial CE", "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
+    border-bottom: 1px solid #AFAFAF; 
+    font-size:  16px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    color: #D20005;
+}
+
+a:link, a:visited {
+  color: #045491;
+  font-weight : bold;
+  text-decoration: none;
+}
+
+a:link:hover, a:visited:hover  {
+  color: #045491;
+  font-weight : bold;
+  text-decoration : underline;
+}
+
+
+#top {
+    position: relative;
+    background-color: #3ac580;
+    color: white;
+    padding: 5px;
+    margin: 0px 0px 0px 0px;
+    height: 120px;
+}
+
+#bottom {
+    position: relative;
+    background-color: #3ac580;
+    padding: 5px;
+    margin: 0px 0px 0px 0px;
+    height: 80px;
+    margin-bottom: -18px;
+}
+
+#left {
+    float: left;
+    background-color: #ece3a5;
+    padding: 5px;
+    width: 160px;
+    height: 510px;
+}
+
+#right {
+    float: right;
+    background-color: #ece3a5;
+    padding: 5px;
+    width: 160px;
+    height: 510px;
+}
+
+.center_content {
+    position: relative;
+    background-color: #dddddd;
+    padding: 5px;
+    height: 420px;
+}
+
+.left_content {
+    background-color: #dddddd;
+    padding: 5px;
+    margin-left: 170px;
+}
+
+.right_content {
+    background-color: #dddddd;
+    padding: 5px;
+    margin: 0px 170px 0px 170px;
+}
+
+#top a:link, #top a:visited {
+  color: white;
+  font-weight : bold;
+  text-decoration: none;
+}
+
+#top a:link:hover, #top a:visited:hover  {
+  color: black;
+  font-weight : bold;
+  text-decoration : underline;
+}
+
+.tlogin{
+	width:400px;
+	margin:80px auto;
+}
+.login{
+	width:83%;
+//  	background-image: linear-gradient(to bottom, white 6%, #3AC580 100%);
+        background-color: rgba(255,255,255,0.8);
+        padding:15px 45px 20px 20px;
+	float:left;
+	border-radius:7px;
+	border:1px solid rgb(214, 213, 213);
+	box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
+}	
+.login input{
+	color:rgb(0, 0, 0);
+	width:95%;
+	padding:7px;
+	border-radius:4px;
+	border:2px solid rgba(248, 250, 251, 0.42);
+	margin:0;
+	box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.25) inset;
+}
+
+.test{
+    color: #3AC580;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.7);
+    font-family: 'Ubuntu', 'Lato', sans-serif;
+    font-size: 26px;
+    padding-left: 10px;
+    font-weight: 900;
+    line-height: 1.1;
+    
+}
+
+.tlogin button {
+    background: #3AC580;
+    width: 270px;
+    border: 1px solid rgb(247, 245, 245);
+    padding: 8px 5px;
+     font-family: 'Ubuntu', 'Lato', sans-serif;
+    border-radius: 5px;
+    float: right;
+    margin: 20px;   
+    -webkit-box-shadow: 1px 1px 1px #E6E6E6;
+}
+
+
+.tlogin button:hover{
+	 border: 1px solid rgb(80, 80, 80);
+}
+
+.tlogin span{
+	float:left;
+	font-family: 'Aldrich',Verdana, Arial, Helvetica, sans-serif;
+	font-size:20px;
+	padding:13px 0;
+	color:rgb(92, 92, 92);
+	width:98%;
+	text-shadow: 1px 2px 2px rgba(141, 140, 140, 0.4);
+	background:transparent url("imagens/cadeado-index.png") no-repeat right;
+}
+
+.form-1 #usuario { 
+    background:url(./imagens/login.png) no-repeat left top;
+}
+
+.form-1 #senha { 
+    background:url(./imagens/senha.png) no-repeat left top;
+}
+
+
+.form-1 #usuario,
+.form-1 #senha {
+	padding-left: 30px;
+	padding-top: 10px;
+}
+.inputTest{
+    color: #3AC580;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.7);
+    font-family: 'Ubuntu', 'Lato', sans-serif;
+    font-size: 26px;
+    padding-left: 10px;
+    font-weight: 900;
+    line-height: 1.1;
+    
+}
+
+
+
+
+
+

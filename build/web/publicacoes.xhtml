@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <h:outputStylesheet name="./css/publico.css"/>
+        <h:outputStylesheet name="./css/styles.css"/>
+        <h:outputStylesheet name="./css/script.js"/>
+        <title>ADS</title>
+    </h:head>
+
+    <h:body>
+
+        <div id="left">
+            <ui:insert name="left"></ui:insert>
+        </div>
+        <div>
+            <div id="right">
+                <ui:insert name="right"></ui:insert>
+            </div>
+            <div id="content" class="right_content">
+                <ui:insert name="content">
+                    <div id="topo">
+                        <img src="./logo.png" height="120" style="margin-top: 15px; margin-left:15px;" />
+                        <div id="curso"> 
+                            <center><b>Análise e Desenvolvimento de Sistemas</b></center>
+                            </div>
+                    </div>
+                    
+                        <div id="cssmenu">
+<ul>
+   <li class='active'><a href='index.jsf'>Home</a></li>
+   <li><a href='apresentacao.jsf'>Apresentação</a></li>
+   <li><a href='corpodocente.jsf'>Corpo docente</a></li>
+   <li class='has-sub'><a href='#'>Ensino</a>
+      <ul>
+          <li><a href='coordenacao.jsf'><b>Coordenação de Curso</b></a></li>
+          <li><a href='proposta.jsf'><b>Proposta Pedagógica</b></a></li>
+          <li><a href='matriz.jsf'><b>Matriz Curricular</b></a></li>
+          <li><a href='colegiado.jsf'><b>Colegiado  de Curso</b></a></li>
+          <li><a href='estagio.jsf'><b>Estágio Curricular e Extracurricular</b></a></li>
+          <li><a href='atividades.jsf'><b>Atividades Complementares</b></a></li>
+          <li><a href='trabalhos.jsf'><b>TCC</b></a></li>
+          <li><a href='normas.jsf'><b>Normas e Regulamentos</b></a></li>
+      </ul>
+   </li>
+    <li class='has-sub'><a href='#'>Projetos</a>
+      <ul>
+          <li><a href='projetospesquisa.jsf'><b>Projetos de Pesquisa</b></a></li>
+          <li ><a href='projetosextensao.jsf'><b>Projetos de Extensão</b></a></li>
+          <li><a href='trabalhos.jsf'><b>Trabalhos</b></a></li>
+          <li><a href='publicacoes.jsf'><b>Publicações</b></a></li>
+      </ul>
+   </li>
+   <li><a href='noticiaeventos.jsf'>Noticias e Eventos</a></li>
+   <li><a href='contato.jsf'>Contato</a></li>
+   <li><a href='login.jsf'><img src="./images.png" height="35" style="margin-top: -10px; margin-left:-7px; margin-right: -7px;"/></a></li>
+</ul>                      
+                        </div>
+                    
+                    <div id="conteudo">
+                        <div class="barra"></div>
+                        <h2 class="font"><center>Publicações</center></h2>
+                        <div class="barramenor"></div>
+                        
+                    </div>
+                   
+                </ui:insert>
+            </div>
+            <div id="rodape" class="right_rodape"> 
+                <ui:insert name="rodape">
+                  <div id="conteudo-rodape">
+                    <p>
+                                <b>Analise e Desenvolvimento de Sistemas</b>
+                                <br><b>Instituto Federal de Educação, Ciência e Tecnologia Baiano – <i>Campus</i> Guanambi</b></br>
+								Zona Rural - Distrito de Ceraíma, Bahia - CEP: 46430-000<br>
+								Tel.: (77) 3493-2100 RAMAL: ---</br> 
+						</p>
+                   
+                  </div>	
+                        <div id="imagens-rodape">
+                            <img src="./face.png" height="40" style="margin-top: 15px; margin-left:15px;" />
+                        </div>
+                       
+                </ui:insert>
+        </div>
+        </div>
+    </h:body>
+
+</html>
+

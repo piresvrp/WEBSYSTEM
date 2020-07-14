@@ -1,0 +1,323 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08/12/2015, 09:38:35
+    Author     : Jo?o Neto
+*/
+
+
+#topo {
+    background-color: #FFFFFF;
+    height: 150px;
+    padding: 10px;
+}
+
+#bottom {
+    position: absolute;
+    bottom: 0px;
+    background-color: #4ecb8d;
+    padding: 5px;
+    margin: 0px 0px 0px 0px;
+    height: 40px;
+    right: 0px;
+    left: 0px;
+    
+}
+
+#left {
+    float: left;
+    background-color: #dddddd;
+    padding: 5px;
+    width: 160px;
+    height: 510px;
+}
+
+.conteudo{
+    padding: 5px;
+    margin: 0px auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: right;
+    background-color: #ffffff;
+    width: 1200px;
+    text-decoration: none;
+}
+#right {
+    float: right;
+    background-color: #dddddd;
+    padding: 5px;
+    width: 160px;
+    height: 510px;
+}
+
+.center_content {
+    position: relative;
+    padding: 5px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: right;
+    background-color: #f3f1f1;
+}
+
+
+.left_content {
+    background-color: #dddddd;
+    padding: 5px;
+    margin-left: 170px;
+}
+
+.right_content {
+    background-color: #ffffff;
+    margin: 0px 170px 0px 170px;
+    height:auto;
+
+}
+
+
+.center_rodape {
+    position: relative;
+    padding: 5px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: right;
+    background-color: #f3f1f1;
+}
+
+
+.left_rodape {
+    background-color: #dddddd;
+    padding: 5px;
+    margin-left: 170px;
+}
+
+.right_rodape {
+    background-color: #80CC28;
+    padding: 5px;
+    margin: 10px 170px 10px 170px;
+    /* min-width:450px; */
+    min-height: 80px;
+    padding-left: 10px;
+}
+
+
+
+
+
+
+
+.rodape{
+    margin: 0px 0px 0px 0px;
+    width: 1200px;
+    padding: 5px;
+   
+}
+
+
+body {
+    background-color: #DDDDDD;
+    font-size: 12px;
+    font-family: Verdana, "Verdana CE",  Arial, "Arial CE", "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
+    color: #330000;
+    margin: 0px;
+}
+
+h1 {
+    font-family: Arial, "Arial CE", "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
+    border-bottom: 1px solid #AFAFAF; 
+    font-size:  16px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    color: #D20005;
+}
+
+a:link, a:visited {
+  color: rgb(24, 22, 23);
+  font-weight : bold;
+  text-decoration: none;
+}
+
+a:link:hover, a:visited:hover  {
+  color: #045491;
+  font-weight : bold;
+  text-decoration:none;
+}
+
+
+.semBorda tr, .semBorda td {  
+    border: none !important; 
+}  
+
+#menu{
+    background-color: #3AC580;
+    margin: 0px 0px 0px 0px;
+    height:50px;
+    z-index: 10px;
+}
+
+#conteudo{
+  padding: 10px;
+  margin-left: 177px;
+  width: 635px;
+  min-height:0px;
+  
+}
+#conteudoindex{
+  padding: 10px;
+  margin-left: 100px;
+  width: 800px;
+  /* width: 635px; */
+  min-height: 400px;
+}
+
+#curso{
+   /* position: relative; */
+   margin-left: 500px;
+   margin-top: -100px;
+   /*font-family: 'Berlin Sans FB';*/
+   font-family: verdana,geneva,sans-serif;
+   font-size: 30px;
+   color: rgb(31, 27, 28);
+}
+
+#imagens-rodape{
+    margin-top: -80px;
+    margin-left: 860px;
+}
+
+#conteudo-rodape{
+    margin-left: 10px;
+}
+
+.font{
+    font:normal normal bold 30px/1.1em Signika,sans-serif;
+    color: rgb(31, 27, 28);
+}
+
+.barra {
+    border-bottom: 3px solid rgb(31, 27, 28);
+    height: 0 !important;
+    min-height: 0 !important;
+    margin-top: 20px;
+}
+
+.barramenor {
+    border-bottom: 2px solid rgb(31, 27, 28);
+    height: 0 !important;
+    min-height: 0 !important;
+}
+
+.docentes{
+  padding: 10px;
+  width: 550px;
+  margin-left: 42.5px;
+}
+
+.imagem{  
+    width: 15%;  
+}  
+.nome-especializacao-email{  
+    width: 70%;  
+}  
+.lattes{  
+    width: 15%;  
+}  
+
+#esquerda{
+    padding: 5px;
+    width: 50%;
+    margin-top: 30px;
+    
+}
+#direita{
+    padding: 5px;
+    width: 50%;
+    margin-left: 300px;
+    margin-top: -100px;
+}
+
+
+.tlogin{
+	width:400px;
+	margin:80px auto;
+}
+.login{
+	width:83%;
+	background-image: linear-gradient(to bottom, #FFFFFF 10%, #80cc28 100%);
+	/* background-color: rgb(128, 204, 40); */
+	padding:15px 45px 20px 20px;
+	float:left;
+	border-radius:7px;
+	border:1px solid rgb(214, 213, 213);
+	box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
+}	
+.login input{
+	color:rgb(0, 0, 0);
+	width:95%;
+	padding:7px;
+	border-radius:4px;
+	border:2px solid rgba(248, 250, 251, 0.42);
+	margin:0;
+	box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.25) inset;
+}
+
+.test{
+    color: #80CC28;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.7);
+    font-family: 'Ubuntu', 'Lato', sans-serif;
+    font-size: 26px;
+    padding-left: 10px;
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+.tlogin button {
+    background: #80CC28;
+    width: 270px;
+    border: 1px solid rgb(247, 245, 245);
+    padding: 8px 5px;
+    font-family: 'Ubuntu', 'Lato', sans-serif;
+    border-radius: 5px;
+    float: right;
+    margin: 20px;
+    -webkit-box-shadow: 1px 1px 1px #E6E6E6;
+}
+
+
+.tlogin button:hover{
+	 border: 1px solid rgb(80, 80, 80);
+}
+
+.tlogin span{
+	float:left;
+	font-family: 'Aldrich',Verdana, Arial, Helvetica, sans-serif;
+	font-size:20px;
+	padding:13px 0;
+	color:rgb(92, 92, 92);
+	width:98%;
+	text-shadow: 1px 2px 2px rgba(141, 140, 140, 0.4);
+	background:transparent url("imagens/cadeado-index.png") no-repeat right;
+}
+
+.form-1 #usuario { 
+    background:url(./imagens/login.png) no-repeat left top;
+}
+
+.form-1 #senha { 
+    background:url(./css/images/senha.png) no-repeat left top;
+}
+
+
+.form-1 #usuario,
+.form-1 #senha {
+	padding-left: 30px;
+	padding-top: 10px;
+}
+
+.tamanho{
+    height: 30px;
+    margin-top: 20px;
+}

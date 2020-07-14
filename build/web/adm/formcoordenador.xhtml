@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:decorate xmlns="http://www.w3.org/1999/xhtml"
+             xmlns:h="http://xmlns.jcp.org/jsf/html"
+             xmlns:p="http://primefaces.org/ui"
+             xmlns:f="http://xmlns.jcp.org/jsf/core"
+             xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+             template="template.xhtml">
+
+    <h:form>                  
+        <p:toolbar styleClass="tamanho">
+            <p:toolbarGroup>
+                <p:commandButton value="Adicionar" action="#{coordenadorBean.adicionar()}" update="@form"></p:commandButton>
+                <p:commandButton value="Listar" action="#{coordenadorBean.listar()}" update="@form"></p:commandButton>
+            </p:toolbarGroup>
+        </p:toolbar>
+        
+        <p:messages autoUpdate="true" showDetail="true"></p:messages>
+        <br/>
+        <p:fieldset legend="Cadastrar Coordenador">
+            <p:panelGrid columns="2">
+                <h:outputLabel value="Curso"></h:outputLabel>
+                
+                <h:selectOneMenu id="cd_curso" value="#{cursoBean.cursos}">
+                    <f:selectItem itemLabel=" - Selecione um curso - " itemValue=""/>
+                    <f:selectItems itemLabel="#{cursoBean.curso.nome_curso}" itemValue="#{cursoBean.curso.cd_curso}"/>
+                </h:selectOneMenu>
+               
+                <h:outputLabel value="Docente"></h:outputLabel>
+                <h:selectOneMenu id="cd_docente" value="#{userData.data}">
+                           <f:selectItem itemLabel=" - Selecione um docente - " itemValue=""/>
+                            <f:selectItems itemLabel="#{professor.nome_docente}" itemValue="#{coordenadorBean.coordenador.cd_docente}"/>
+ 
+                        </h:selectOneMenu>
+                
+                <h:outputLabel value="Ano"></h:outputLabel>
+                <p:calendar value="#{coordenadorBean.coordenador.ano_ingresso}"></p:calendar>
+                
+            </p:panelGrid>
+            <br/>
+            <p:dataTable value="#{coordenadorBean.coordenadores}" var="professor">
+                <p:column>
+                    <p:commandButton value="Editar" action="#{coordenadorBean.editar(c)}" update="@form"></p:commandButton>
+                    <p:commandButton value="Deletar" action="#{coordenador.deletar(c)}" update="@form"></p:commandButton>
+                </p:column>
+                <p:column headerText="Curso" sortBy="#{coordenador.cd_curso}">
+                    <h:outputText value="#{coordenador.cd_curso}"></h:outputText>
+                </p:column>
+                 <p:column headerText="Docente" sortBy="#{coordenador.cd_docente}">
+                    <h:outputText value="#{coordenador.cd_docente}"></h:outputText>
+                </p:column>
+                <p:column headerText="Ano" sortBy="#{coordenador.ano_ingresso}">
+                    <h:outputText value="#{coordenador.ano_ingresso}"></h:outputText>
+                </p:column>
+               
+            </p:dataTable>
+        </p:fieldset>
+    </h:form>
+</ui:decorate>

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:decorate xmlns="http://www.w3.org/1999/xhtml"
+             xmlns:h="http://xmlns.jcp.org/jsf/html"
+             xmlns:p="http://primefaces.org/ui"
+             xmlns:f="http://xmlns.jcp.org/jsf/core"
+             xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+             template="template.xhtml">
+
+    <h:form>                  
+        <p:toolbar styleClass="tamanho">
+            <p:toolbarGroup>
+                <p:commandButton value="Adicionar" action="#{noticiaBean.adicionar()}" update="@form"></p:commandButton>
+                <p:commandButton value="Listar" action="#{noticiaBean.listar()}" update="@form"></p:commandButton>
+            </p:toolbarGroup>
+        </p:toolbar>
+        
+        <p:messages autoUpdate="true" showDetail="true"></p:messages>
+        <br/>
+        <p:fieldset legend="Cadastrar Noticias">
+            <p:panelGrid columns="2" styleClass="semBorda">
+                <h:outputLabel value="Evento"></h:outputLabel>
+                <p:inputText value="#{noticiaBean.noticia.evento}"></p:inputText>
+
+                <h:outputLabel value="Descricao"></h:outputLabel>
+                <p:inputTextarea value="#{noticiaBean.noticia.descricao}"></p:inputTextarea>
+                    
+                
+                <h:outputLabel value="Data inicio"></h:outputLabel>
+                <p:calendar value="#{noticiaBean.noticia.data_inicio}"></p:calendar>
+                
+                <h:outputLabel value="Data fim"></h:outputLabel>
+                <p:calendar value="#{noticiaBean.noticia.data_fim}"></p:calendar>
+                
+                <h:outputLabel value="Hora inicio"></h:outputLabel>
+                <p:inputText value="#{noticiaBean.noticia.hora_inicio}"></p:inputText>
+                
+                <h:outputLabel value="Hora fim"></h:outputLabel>
+                <p:inputText value="#{noticiaBean.noticia.hora_fim}"></p:inputText>
+                
+            </p:panelGrid>
+            <br/>
+            <p:dataTable value="#{noticiaBean.noticias}" var="aluno">
+                <p:column>
+                    <p:commandButton value="Editar" action="#{noticiaBean.editar(n)}" update="@form"></p:commandButton>
+                    <p:commandButton value="Deletar" action="#{noticiaBean.deletar(n)}" update="@form"></p:commandButton>
+                </p:column>
+                <p:column headerText="Evento" sortBy="#{noticia.evento}">
+                    <h:outputText value="#{noticia.evento}"></h:outputText>
+                </p:column>
+                <p:column headerText="Descricao" sortBy="#{noticia.descricao}">
+                    <h:outputText value="#{noticia.descricao}">
+                    </h:outputText>
+                </p:column>
+                <p:column headerText="Data de Inicio" sortBy="#{noticia.data_inicio}">
+                    <h:outputText value="#{noticia.data_inicio}"></h:outputText>
+                </p:column>
+                <p:column headerText="Data fim" sortBy="#{noticia.data_fim}">
+                    <h:outputText value="#{noticia.data_fim}"></h:outputText>
+                </p:column>
+                <p:column headerText="Hora de Inicio" sortBy="#{noticia.hora_inicio}">
+                    <h:outputText value="#{noticia.hora_inicio}"></h:outputText>
+                </p:column>
+                <p:column headerText="Hora fim" sortBy="#{noticia.hora_fim}">
+                    <h:outputText value="#{noticia.hora_fim}"></h:outputText>
+                </p:column>
+               
+            </p:dataTable>
+        </p:fieldset>
+    </h:form>
+</ui:decorate>
